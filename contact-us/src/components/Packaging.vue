@@ -380,4 +380,29 @@ textarea {
         width: 75%;
     }
 }
+
+@media only screen and (max-width: 767px) {
+    .form-group {
+        flex-wrap: wrap;
+        gap: 0;
+    }
+
+    .col-sm-3,
+    .col-sm-4,
+    .col-sm-9 {
+        width: 100%;
+    }
+
+    label {
+        font-size: 12px;
+    }
+
+    .button.button-3d {
+        font-size: 12px;
+    }
+
+    .dropzone {
+        padding: 10px;
+    }
+}
 </style>
