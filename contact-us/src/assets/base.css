@@ -1,0 +1,75 @@
+/* color palette from <https://github.com/vuejs/theme> */
+:root {
+  --white: #ffffff;
+  --white-soft: #f2f4f8;
+  --white-mute: #f2f2f2;
+
+  --black: #000000;
+  --black-soft: #979797;
+  
+  --dark-grey: #333333;
+  --grey-soft: #ccc;
+  --grey-mute: #868e96;
+
+  --theme-pink: #f9278e;
+  --theme-dark-pink: #d91a72;
+}
+
+@font-face {
+  font-family: Lato;
+  src: url(./fonts/Lato-Light.ttf);
+  font-weight: 300;
+  font-style: normal
+}
+
+@font-face {
+  font-family: Lato;
+  src: url(./fonts/Lato-Regular.ttf);
+  font-weight: 400;
+  font-style: normal
+}
+
+@font-face {
+  font-family: Lato;
+  src: url(./fonts/Lato-Bold.ttf);
+  font-weight: 700;
+  font-style: normal
+}
+
+@font-face {
+  font-family: Lato;
+  src: url(./fonts/Lato-Black.ttf);
+  font-weight: 900;
+  font-style: normal
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --color-background: var(--black);
+    --color-background-soft: var(--black-soft);
+    --color-background-mute: var(--black-mute);
+
+    --color-border: var(--vt-c-divider-dark-2);
+    --color-border-hover: var(--vt-c-divider-dark-1);
+
+    --color-heading: var(--vt-c-text-dark-1);
+    --color-text: var(--vt-c-text-dark-2);
+  }
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+  margin: 0;
+}
+
+body {
+  min-height: 100vh;
+  color: var(--color-text);
+  background: var(--color-background);
+  line-height: 1.5;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
