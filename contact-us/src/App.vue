@@ -42,7 +42,7 @@ import LiveChatBlock from './components/LiveChatBlock.vue';
 }
 
 .container {
-  width: 1170px;
+  max-width: 1170px;
   margin-left: auto;
   margin-right: auto;
 }

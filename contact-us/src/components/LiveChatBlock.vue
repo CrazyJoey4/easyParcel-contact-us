@@ -103,9 +103,21 @@ body:not(.device-touch) .button {
     text-shadow: 1px 1px 1px rgba(0, 0, 0, .2);
 }
 
+/* Responsive */
 @media (min-width: 992px) {
     .col-md-12 {
         width: 100%;
+    }
+}
+
+@media (max-width: 767px) {
+    .promo {
+        padding: 30px 15px;
+    }
+
+    .promo a.button {
+        position: static;
+        margin: 10px 0;
     }
 }
 </style>

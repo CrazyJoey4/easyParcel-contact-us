@@ -363,4 +363,30 @@ h3 {
         width: initial;
     }
 }
+
+@media only screen and (max-width: 768px) {
+    .cu_quest.d-flex {
+        flex-direction: column;
+        gap: 15px;
+    }
+
+    .cu_quest.d-flex .btn-enquiry {
+        max-width: none;
+        width: 100%;
+    }
+
+    .rightmargin-sm {
+        margin-right: 0 !important;
+    }
+
+    .col-md-8 {
+        width: 100%;
+    }
+
+    .btn-enquiry-step2 {
+        width: 100%;
+        margin-right: 0;
+        margin-bottom: 10px;
+    }
+}
 </style>
